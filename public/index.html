@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogGenius-AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BlogGenius-AI</h1>
+            <p>Enter a topic or keywords to generate a complete blog post</p>
+        </header>
+        
+        <div class="input-section">
+            <input type="text" id="topic" placeholder="Enter topic or keywords (e.g., sustainable gardening tips)">
+            <select id="blog-length">
+                <option value="short">Short (~300 words)</option>
+                <option value="medium" selected>Medium (~600 words)</option>
+                <option value="long">Long (~1000 words)</option>
+            </select>
+            <button id="generate-btn">Generate Blog Post</button>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Generating your blog post...</p>
+        </div>
+        
+        <div class="output-section" id="output-section">
+            <div class="controls">
+                <button id="copy-btn">Copy to Clipboard</button>
+                <button id="download-btn">Download as Markdown</button>
+            </div>
+            <div id="blog-output" class="blog-output"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
